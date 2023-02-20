@@ -42,22 +42,25 @@ namespace CarLotSimulator
             bmw.HonkNoise = "Beep Beep";
             bmw.IsDriveable= true;
 
-            bmw.MakeEngineNoise();
-            bmw.MakeHonkNoise();
+            //bmw.MakeEngineNoise();
+            //bmw.MakeHonkNoise();
+            Console.WriteLine($"The number of cars in the lot is: {CarLot.numberOfCars}");
 
             //Object initializer syntax
             Car celica = new Car() { Year = 1996, Make = "Toyota", Model = "Celica", EngineNoise = "putter", HonkNoise = "HAWNK", IsDriveable= true };
             lot.Carlist.Add(celica);
+            Console.WriteLine($"The number of cars in the lot is: {CarLot.numberOfCars}");
 
-            celica.MakeEngineNoise();
-            celica.MakeHonkNoise();
+            //celica.MakeEngineNoise();
+            //celica.MakeHonkNoise();
 
             //Constructor initialization
             Car sonata = new Car(2022, "Hyundai", "Sonata", "vroom vroom", "beep beep", true);
             lot.Carlist.Add(sonata);
+            Console.WriteLine($"The number of cars in the lot is: {CarLot.numberOfCars}");
 
-            sonata.MakeEngineNoise();
-            sonata.MakeHonkNoise();
+            //sonata.MakeEngineNoise();
+            //sonata.MakeHonkNoise();
 
             Console.WriteLine("-------------");
 
@@ -67,7 +70,7 @@ namespace CarLotSimulator
                 Console.WriteLine($"Year:{car.Year} Make: {car.Make} Model: {car.Model}");
             }
 
-
+            Console.WriteLine($"The number of cars in the lot is: {CarLot.numberOfCars}");
 
 
 
